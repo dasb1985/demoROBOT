@@ -19,7 +19,8 @@ phases:
       - robot -d \Results --listener \Resources\LogoListener.py:\Resources\config.yml \Test || true
 artifacts:
   files:
-    - 'output/*.html'
-    - 'output/*.xml'
-    - 'output/*.log'
-  discard-paths: no
+    - 'Results/*.html'
+    - 'Results/*.xml'
+    - 'Results/*.log'
+  base-directory: Results
+  discard-paths: yes
