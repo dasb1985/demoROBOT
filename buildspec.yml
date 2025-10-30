@@ -1,0 +1,25 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - python -V
+      #- pip install robotframework
+      # Install other required libraries, e.g., robotframework-seleniumlibrary
+      #- pip install robotframework-seleniumlibrary
+      - pip install -r ./Resources/requirements.txt
+      # Install browser drivers if needed for web testing
+      # - apt-get update && apt-get install -y chromium-chromedriver # for Debian/Ubuntu based images
+      - pwd
+      - ls -ltr
+  build:
+    commands:
+      # Execute Robot Framework tests
+      # Use `|| true` to prevent the pipeline from failing immediately on test failures
+      #- robot -d output/ Test/ || true
+      - robot -d \Results --listener \Resources\LogoListener.py:\Resources\config.yml \Test || true
+artifacts:
+  files:
+    - 'output/*.html'
+    - 'output/*.xml'
+    - 'output/*.log'
+  discard-paths: no
