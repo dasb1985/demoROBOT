@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-10-30T11:01:58.980325" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/mnt/c/Workspace/Demo_Automatizacion_QA/Test">
+<suite id="s1-s1" name="itemsComparition" source="/mnt/c/Workspace/Demo_Automatizacion_QA/Test/itemsComparition.robot">
+<test id="s1-s1-t1" name="Comparation test" line="11">
+<kw name="Store page is loaded" owner="common">
+<kw name="Open Browser">
+<msg time="2025-10-30T11:01:59.714844" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<status status="FAIL" start="2025-10-30T11:01:59.714811" elapsed="0.000079">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2025-10-30T11:01:59.715050" elapsed="0.000015"/>
+</kw>
+<kw name="Get Title">
+<var>${title}</var>
+<status status="NOT RUN" start="2025-10-30T11:01:59.715132" elapsed="0.000044"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${pageTitle_txt}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-10-30T11:01:59.715260" elapsed="0.000014"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-30T11:01:59.715332" elapsed="0.000011"/>
+</kw>
+<status status="FAIL" start="2025-10-30T11:01:59.713480" elapsed="0.001951">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Search product: Apple Cinema 30 for comparision" owner="shoppingCart_kw" source_name="Search product: ${name_product} for comparision">
+<doc>Siguiendo la keyword anterior como base agregara items para ser comparados</doc>
+<status status="NOT RUN" start="2025-10-30T11:01:59.715644" elapsed="0.000039"/>
+</kw>
+<kw name="Search product: Samsung SyncMaster 941BW for comparision" owner="shoppingCart_kw" source_name="Search product: ${name_product} for comparision">
+<doc>Siguiendo la keyword anterior como base agregara items para ser comparados</doc>
+<status status="NOT RUN" start="2025-10-30T11:01:59.715844" elapsed="0.000020"/>
+</kw>
+<kw name="Go to product comparition page" owner="shoppingCart_kw">
+<status status="NOT RUN" start="2025-10-30T11:01:59.715975" elapsed="0.000013"/>
+</kw>
+<status status="FAIL" start="2025-10-30T11:01:59.712871" elapsed="0.003260">No keyword with name 'Open Browser' found.</status>
+</test>
+<doc>Este test realizara una comparacion entre dos elementos para luego obtener un cuadro de comapracion</doc>
+<status status="FAIL" start="2025-10-30T11:01:59.352676" elapsed="0.363847"/>
+</suite>
+<suite id="s1-s2" name="shoppingCreatingNewAccount" source="/mnt/c/Workspace/Demo_Automatizacion_QA/Test/shoppingCreatingNewAccount.robot">
+<test id="s1-s2-t1" name="Shopping and create new account" line="18">
+<kw name="Given Customer is on shopping Page">
+<kw name="Store page is loaded" owner="common">
+<kw name="Open Browser">
+<msg time="2025-10-30T11:01:59.898804" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<status status="FAIL" start="2025-10-30T11:01:59.898778" elapsed="0.000064">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2025-10-30T11:01:59.898940" elapsed="0.000011"/>
+</kw>
+<kw name="Get Title">
+<var>${title}</var>
+<status status="NOT RUN" start="2025-10-30T11:01:59.899007" elapsed="0.000008"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${pageTitle_txt}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-10-30T11:01:59.899076" elapsed="0.000011"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-30T11:01:59.899138" elapsed="0.000009"/>
+</kw>
+<status status="FAIL" start="2025-10-30T11:01:59.898056" elapsed="0.001152">No keyword with name 'Open Browser' found.</status>
+</kw>
+<status status="FAIL" start="2025-10-30T11:01:59.897843" elapsed="0.001407">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="When customer fill up his car">
+<status status="NOT RUN" start="2025-10-30T11:01:59.899395" elapsed="0.000016"/>
+</kw>
+<kw name="Then billing and payment is completed by user">
+<status status="NOT RUN" start="2025-10-30T11:01:59.899538" elapsed="0.000013"/>
+</kw>
+<status status="FAIL" start="2025-10-30T11:01:59.897443" elapsed="0.002230">No keyword with name 'Open Browser' found.</status>
+</test>
+<doc>El siguiente test comenzara cargando la pagina, para posteriormente agregar los productos, validarlos
+dentro del carro  y comenzar checkout
+Durante el proceso de Checkout este crea una cuenta nueva, sacando los datos desde excel adjunto
+La Variable  idVarPrincipal  nos permite iterar sobre el archivo excel para buscar ese ID e ingresarlo como cuenta nueva</doc>
+<status status="FAIL" start="2025-10-30T11:01:59.716878" elapsed="0.183015"/>
+</suite>
+<suite id="s1-s3" name="writeReview" source="/mnt/c/Workspace/Demo_Automatizacion_QA/Test/writeReview.robot">
+<test id="s1-s3-t1" name="Look for HP and write a review" line="11">
+<kw name="Store page is loaded" owner="common">
+<kw name="Open Browser">
+<msg time="2025-10-30T11:02:00.121219" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<status status="FAIL" start="2025-10-30T11:02:00.121185" elapsed="0.000076">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2025-10-30T11:02:00.121382" elapsed="0.000011"/>
+</kw>
+<kw name="Get Title">
+<var>${title}</var>
+<status status="NOT RUN" start="2025-10-30T11:02:00.121648" elapsed="0.000016"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${pageTitle_txt}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" start="2025-10-30T11:02:00.121745" elapsed="0.000015"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-30T11:02:00.121817" elapsed="0.000010"/>
+</kw>
+<status status="FAIL" start="2025-10-30T11:02:00.119984" elapsed="0.001949">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Write a review" owner="shoppingCart_kw">
+<doc>En esta seccion realizaremos la escritura de un review, asignaremos un rating para posteriormente ser enviado a revision.</doc>
+<status status="NOT RUN" start="2025-10-30T11:02:00.122343" elapsed="0.000026"/>
+</kw>
+<status status="FAIL" start="2025-10-30T11:02:00.119475" elapsed="0.003037">No keyword with name 'Open Browser' found.</status>
+</test>
+<doc>Este test buscara un elemento indicado para posteriormente agregarlo X
+veces, luego de eso escribira un review en dicho elemento</doc>
+<status status="FAIL" start="2025-10-30T11:01:59.900327" elapsed="0.222439"/>
+</suite>
+<status status="FAIL" start="2025-10-30T11:01:58.998794" elapsed="1.124358"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="0" fail="3" skip="0">Test</stat>
+<stat name="itemsComparition" id="s1-s1" pass="0" fail="1" skip="0">Test.itemsComparition</stat>
+<stat name="shoppingCreatingNewAccount" id="s1-s2" pass="0" fail="1" skip="0">Test.shoppingCreatingNewAccount</stat>
+<stat name="writeReview" id="s1-s3" pass="0" fail="1" skip="0">Test.writeReview</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-10-30T11:01:58.996611" level="ERROR">Taking listener 'ResourcesLogoListener.py:Resourcesconfig.yml' into use failed: Importing listener 'ResourcesLogoListener.py' failed: ModuleNotFoundError: No module named 'ResourcesLogoListener'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.366684" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Test/itemsComparition.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.419183" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/shoppingCart_kw.resource' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.499640" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/checkoutPage_kw.resource' on line 3: Importing library 'RPA.Excel.Files' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.576517" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/checkoutPage_kw.resource' on line 5: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.645829" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/history_kw.resource' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.712038" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/common.resource' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.734703" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Test/shoppingCreatingNewAccount.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.763101" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/shoppingCart_kw.resource' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.802080" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/checkoutPage_kw.resource' on line 3: Importing library 'RPA.Excel.Files' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.820465" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/checkoutPage_kw.resource' on line 5: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.871117" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/history_kw.resource' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.896521" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/common.resource' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.924458" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Test/writeReview.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.949654" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/shoppingCart_kw.resource' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:01:59.986426" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/checkoutPage_kw.resource' on line 3: Importing library 'RPA.Excel.Files' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:02:00.004209" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/checkoutPage_kw.resource' on line 5: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:02:00.089737" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/history_kw.resource' on line 4: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+<msg time="2025-10-30T11:02:00.118679" level="ERROR">Error in file '/mnt/c/Workspace/Demo_Automatizacion_QA/Resources/common.resource' on line 3: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/bin
+  /usr/lib/python312.zip
+  /usr/lib/python3.12
+  /usr/lib/python3.12/lib-dynload
+  /mnt/c/Workspace/Demo_Automatizacion_QA/rf-env/lib/python3.12/site-packages</msg>
+</errors>
+</robot>

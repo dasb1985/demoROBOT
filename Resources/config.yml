@@ -1,0 +1,5 @@
+output_dir: Results
+logo_filename: Resources/pruebaLogo.png
+logo_height: 60
+title_text: "Reporte Automatizado, generado por Netics"
+title_color: "#003366"
