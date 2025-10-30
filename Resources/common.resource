@@ -9,7 +9,7 @@ Create options for Chrome
     Call Method    ${options}        add_argument        headless
     Call Method    ${options}        add_argument        no-sandbox
     Call Method    ${options}        add_argument        disable-dev-shm-usage
-    #Call Method    ${options}        add_argument        user-data-dir=${CHROME_USER_DIR}
+    Call Method    ${options}        add_argument        user-data-dir=${CURDIR}
     RETURN    ${options}
     
 Store page is loaded
