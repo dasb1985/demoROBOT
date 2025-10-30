@@ -3,13 +3,18 @@ Resource   ..//Resources//common_po.resource
 Library    SeleniumLibrary
 
 *** Keywords ***
-Store page is loaded
-    Open Browser    ${url}        Chrome
-    ...    options=add_argument('--headless=new');
-    ...    add_argument('--no-sandbox');
-    ...    add_argument('--disable-dev-shm-usage');
-    ...    add_argument('--user-data-dir=/tmp/chrome-user-${CURDIR}')
+
+Create options for Chrome
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys
+    Call Method    ${options}    add_argument    --headless=new
+    Call Method    ${options}    add_argument    --no-sandbox
+    Call Method    ${options}    add_argument    --disable-dev-shm-usage
+    Call Method    ${options}    add_argument    --user-data-dir=${CHROME_USER_DIR}
+    [Return]    ${options}
     
+Store page is loaded
+    ${chrome_OPT}=    Create Options For Chrome
+    Open Browser    ${url}        Chrome    chrome_options=${chrome_OPT}
     Maximize Browser Window
     ${title}=        Get Title
     Should Be Equal    ${title}    ${pageTitle_txt}   
